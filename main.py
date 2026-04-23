@@ -25,8 +25,9 @@ classmates = [
 
 # Display all classmates and their introductions
 def displayClassmates(e):
-    output = document.getElementById("playerOutput")
+    output = document.getElementById("classmateOutput")
     output.innerHTML = "<strong>Classmate List:</strong><br><br>"
+    output.style.display = "block"
 
     for i, classmate in enumerate(classmates, start=1):
         output.innerHTML += f"{i}. {classmate.introduce()}<br>"
@@ -36,7 +37,7 @@ def addClassmate(e):
     name_input = document.getElementById("name")
     section_input = document.getElementById("section")
     subject_input = document.getElementById("favoriteSubject")
-    output = document.getElementById("playerOutput")
+    output = document.getElementById("classmateOutput")
 
     name = name_input.value.strip()
     section = section_input.value.strip()
