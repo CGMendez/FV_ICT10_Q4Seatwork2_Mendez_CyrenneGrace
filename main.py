@@ -33,7 +33,7 @@ def displayClassmates(e):
 
 # Add a new classmate from the input fields
 def addClassmate(e):
-    name_input = document.getElementById("playerName")
+    name_input = document.getElementById("name")
     section_input = document.getElementById("section")
     subject_input = document.getElementById("favoriteSubject")
     output = document.getElementById("playerOutput")
